@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>想象力大爆炸</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script src="lib/nebPay.min.js"></script>
+    <script src="lib/nebulas.js"></script>
+    <script src="javascripts/jquery-3.3.1.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/index.js"></script>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/index.css" rel="stylesheet" />
+</head>
+<body>
+<div class="box">
+    <div class="head">
+        <i style="line-height: 20px">想象力终将成为第一生产力 —（佚名）</i>
+        <span>想象力大爆炸</span>
+    </div>
+    <div id="loading">
+        <img src="images/loading.gif" alt="">
+    </div>
+    <div class="main">
+        <div class="main-box">
+
+        </div>
+        <button id="loadBtn">
+            换一批
+        </button>
+        <div id="box-shadow">
+            <div id="wait"></div>
+        </div>
+    </div>
+    <div id="my-box-shadow">
+        <div id="my-box">
+            <h5>奇思妙想</h5>
+            <input type="text" placeholder="关键字" id="keywords" class="form-control">
+            <textarea name="content" id="content" cols="30" rows="10" placeholder="内容" class="form-control"></textarea>
+            <button id="write" class="btn btn-primary">发布</button>
+        </div>
+    </div>
+    <div id="add">+</div>
+    <div  id="show-detail" >
+        <div id='content-box'>
+            <div class='content'>
+                <div class='idea-head'>
+                    <div class='keyword-box'>
+                        <span class='keyword'>关键词：</span>
+                        <i id='keyword-detail'></i>
+                    </div>
+                    <div>
+                        时间：<i id='publish-time'></i>
+                    </div>
+                    <span class='author-box'>
+                    <span class='author-txt'>作者：</span>
+                    <i id='author'></i>
+                </span>
+                    <div id='idea-content'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
